@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Time Spent</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center my-5" style="color:#bbe1fa">Time Spent ⏱</h1>
+            <h3 class="text-center" style="color:#3282b8; line-height: 1.6;"> Find out the total time you lived on 🌏</h3>    
+            <form class="text-center my-4">
+                
+                <input type="text" class="form-control m-auto"  id="myDate" placeholder="Enter Your Birthday 🎉🥳" onfocus="(this.type='date')">
+            </form>
+        <button type="button" class="btn btn-success mx-auto d-block button" style="margin-top: 10px;">Tell my worth ⚡</button>
+        <div class="toogleHide" style="margin-top: 20px;">
+            <div class="row sec" style="background-color: #0f4c75; border-radius: 5px;">
+                <div class="col-sm-3" >
+                    <h2 class="text-light text-center">Seconds:</h2>
+                </div>
+                <div class="col-sm-9" >
+                    <h2  class="text-center" style="color: #a7d129" id="secs"></h2>
+                </div>
+            </div>
+            <div class="row min" style="background-color: #0f4c75; border-radius: 5px;">
+                <div class="col-sm-3">
+                    <h2 class="text-light text-center">Minutes:</h2>
+                </div>
+                <div class="col-sm-9">
+                    <h2 class="text-center" style="color: #a7d129" id="mins"></h2>
+                </div>
+            </div>
+            <div class="row hours" style="background-color: #0f4c75; border-radius: 5px;">
+                <div class="col-sm-3">
+                    <h2 class="text-light text-center">Hours:</h2>
+                </div>
+                <div class="col-sm-9">
+                    <h2  class="text-center" style="color: #a7d129"id="hrs"></h2>
+                </div>
+            </div>
+            <div class="row days" style="background-color: #0f4c75; border-radius: 5px;">
+                <div class="col-sm-3">
+                    <h2 class="text-light text-center">Days:</h2>
+                </div>
+                <div class="col-sm-9">
+                    <h2  class="text-center" style="color: #a7d129"id="days"></h2>
+                </div>
+            </div>
+            <div class="row week" style="background-color: #0f4c75; border-radius: 5px;">
+                <div class="col-sm-3">
+                    <h2 class="text-light text-center">Weeks:</h2>
+                </div>
+                <div class="col-sm-9">
+                    <h2 class="text-center"  style="color: #a7d129"id="weeks"></h2>
+                </div>
+            </div>
+            <div class="row months" style="background-color: #0f4c75; border-radius: 5px;">
+                <div class="col-sm-3">
+                    <h2 class="text-light text-center">Months:</h2>
+                </div>
+                <div class="col-sm-9">
+                    <h2  class="text-center" style="color: #a7d129"id="mons"></h2>
+                </div>
+            </div>
+            <div class="row years" style="background-color: #0f4c75; border-radius: 5px;">
+                <div class="col-sm-3">
+                    <h2 class="text-light text-center">Years:</h2>
+                </div>
+                <div class="col-sm-9">
+                    <h2 class="text-center"  style="color: #a7d129"id="yrs"></h2>
+                </div>
+            </div>
+        </div>
+        <img src="https://forthebadge.com/images/badges/made-with-javascript.svg" alt="" class="mx-auto d-block" style="margin-top: 40px;">   
+        <div class="text-center space">
+            <a href="https://github.com/AsishRaju?tab=repositories" class="badge badge-light">Asish.io ⚡</a>
+        </div> 
+        
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

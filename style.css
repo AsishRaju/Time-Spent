@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap');
+
+body{
+    background:#1b262c;
+    font-family: 'Open Sans', sans-serif;
+
+}
+h1{
+    font-weight: 700;
+}
+.container{
+    max-width: 650px;
+}
+
+input[type=text],
+input[type=text]:focus{
+    margin-top: 50px !important;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    background:#0f4c75;
+    max-width: 400px;
+    max-height: 90px ;
+}
+.toogleHide{
+    
+    display: none;
+}
+
+.min{
+    margin-top: 10px;
+}
+.hours{
+    margin-top: 10px;
+}
+.days
+{
+    margin-top: 10px;
+}
+.week{
+    margin-top: 10px;
+}
+.months{
+    margin-top: 10px;
+}
+.years{
+    margin-top: 10px;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    text-align: center;
+    color:white !important;
+    opacity: 0.5; /* Firefox */
+  }
