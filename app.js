@@ -2,6 +2,8 @@
 const button=document.querySelector('.button')
 const datePicker = document.getElementById("myDate")
 const hide = document.querySelector('.toogleHide')
+var timer
+var firstClick=true
 var secTemplate=document.getElementById('secs')
 var minTemplate=document.getElementById('mins')
 var hrsTemplate=document.getElementById('hrs')
@@ -22,23 +24,38 @@ setInterval(()=>{
 },1000)
 
 button.addEventListener('click',()=>{
-    const dob=new Date(datePicker.value)
-    hide.classList.remove('toogleHide')
-    setInterval(()=>{
-        const now=new Date()
-        getDiff(dob.getTime(),now.getTime())
-    }, 1000);
+    if(firstClick)
+    {
+        firstClick=false
+        getData()
+        
+    }
+    else{
+
+        clearInterval(timer)
+        getData()
+    }
 })
+
+function getData(){
+    const dob=new Date(datePicker.value)
+    dob.setHours(0,0,0,0)
+    hide.classList.remove('toogleHide')
+    timer=setInterval(()=>{
+    const now=new Date()
+    getDiff(dob.getTime(),now.getTime())
+    }, 1000);
+}
 
 function getDiff(dob,now){
     const diff=now-dob
-    const sec=Math.round(diff/1000)
-    const mins=Math.round(sec/60)
-    const hours=Math.round(mins/60)
-    const days=Math.round(hours/24)
-    const weeks=Math.round(days/7)
-    const months=Math.round(weeks/4.345)
-    const year=Math.round(months/12)
+    const sec=(diff/1000)
+    const mins=(sec/60)
+    const hours=(mins/60)
+    const days=(hours/24)
+    const weeks=(days/7)
+    const months=(weeks/4.345)
+    const year=(months/12)
     genTemplate(sec,mins,hours,days,weeks,months,year)
 }
 
