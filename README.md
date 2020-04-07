@@ -1,5 +1,6 @@
 # Time Spent ⏰
  Find out the total time you lived on 🌏
+<<<<<<< HEAD
 
 ### Check it out [here]!
 <img src="https://forthebadge.com/images/badges/made-with-javascript.svg"> 
@@ -24,4 +25,4 @@
 [Gmail]: <mailto:vashish888@gmail.com>
 [LinkedIn]: <https://www.linkedin.com/in/asish-raju-7a0b90192>
 [Twitter]: <https://twitter.com/vashish888>
- [here]:<https://asishraju.github.io/Time-Spent/>
+[here]:<https://asishraju.github.io/Time-Spent/>
