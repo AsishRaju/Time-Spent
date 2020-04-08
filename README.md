@@ -1,6 +1,5 @@
 # Time Spent ⏰
  Find out the total time you lived on 🌏
-<<<<<<< HEAD
 
 ### Check it out [here]!
 <img src="https://forthebadge.com/images/badges/made-with-javascript.svg"> 
