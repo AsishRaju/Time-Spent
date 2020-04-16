@@ -1,4 +1,10 @@
-
+var differenceInYears = require('date-fns/differenceInYears')
+var differenceInMonths = require('date-fns/differenceInMonths')
+var differenceInWeeks = require('date-fns/differenceInWeeks')
+var differenceInDays = require('date-fns/differenceInDays')
+var differenceInHours = require('date-fns/differenceInHours')
+var differenceInMinutes = require('date-fns/differenceInMinutes')
+var differenceInSeconds = require('date-fns/differenceInSeconds')
 const button=document.querySelector('.button')
 const datePicker = document.getElementById("myDate")
 const hide = document.querySelector('.toogleHide')
@@ -38,24 +44,49 @@ button.addEventListener('click',()=>{
 })
 
 function getData(){
-    const dob=new Date(datePicker.value)
-    dob.setHours(0,0,0,0)
     hide.classList.remove('toogleHide')
     timer=setInterval(()=>{
     const now=new Date()
-    getDiff(dob.getTime(),now.getTime())
+    getDiff()
     }, 1000);
 }
 
-function getDiff(dob,now){
-    const diff=now-dob
-    const sec=(diff/1000)
-    const mins=(sec/60)
-    const hours=(mins/60)
-    const days=(hours/24)
-    const weeks=(days/7)
-    const months=(weeks/4.345)
-    const year=(months/12)
+function getDiff(){
+    var year = differenceInYears(
+        new Date(),
+        new Date(datePicker.value)
+      )
+    
+    var months = differenceInMonths(
+        new Date(),
+        new Date(datePicker.value)
+      )
+    
+      var weeks = differenceInWeeks(
+        new Date(),
+        new Date(datePicker.value)
+      )
+      
+      var days = differenceInDays(
+        new Date(),
+        new Date(datePicker.value)
+      )
+    
+      var hours = differenceInHours(
+        new Date(),
+        new Date(datePicker.value)
+      )
+    
+      var mins = differenceInMinutes(
+        new Date(),
+        new Date(datePicker.value)
+      )
+    
+      var sec = differenceInSeconds(
+        new Date(),
+        new Date(datePicker.value)
+      )
+   
     genTemplate(sec,mins,hours,days,weeks,months,year)
 }
 

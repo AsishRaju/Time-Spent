@@ -1,0 +1,22 @@
+{
+  "name": "time-spent",
+  "version": "1.0.0",
+  "description": "Find out the total time you lived on 🌏",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsishRaju/Time-Spent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AsishRaju/Time-Spent/issues"
+  },
+  "homepage": "https://github.com/AsishRaju/Time-Spent#readme",
+  "dependencies": {
+    "date-fns": "^2.12.0"
+  }
+}
