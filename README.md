@@ -11,6 +11,12 @@
 
 - Nothing but simple Javascript Date objects to play with 
 
+## Start Devloping 👨🏻‍💻
+- Clone this repo
+- run `npm install` to resolve dependencies
+- navigate to `scripts\app.js` for the main logic part
+- npm pacakages are used on browser with the help of [Browsify]
+
 ## WIP 🛠
 - Better UI maybe?😬
 - Mobile APP
@@ -21,6 +27,7 @@
 - for any clarification on code or want to contribute contact 
 - [Gmail] / [Twitter] /[LinkedIn]
 
+[Browsify]: <http://browserify.org/>
 [Gmail]: <mailto:vashish888@gmail.com>
 [LinkedIn]: <https://www.linkedin.com/in/asish-raju-7a0b90192>
 [Twitter]: <https://twitter.com/vashish888>
